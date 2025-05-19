@@ -14,21 +14,33 @@ npm i
 
 ## Test
 
-You can run an specific algorithm with the following command
+You can test an specific algorithm with the following command
 
 ``` bash
-npm test --[folder]
+npm test -- [folder]/[subfolder]
+```
+
+You can test all the excersices from a technique or category with the following command
+
+``` bash
+npm test -- [folder]
 ```
 
 **Example**
+
+Runing frequencies substring from Sliding Window Technique
 ``` bash
-npm test -- frequencies_substring
+npm test -- sliding_window/frequencies_substring
 ```
 
+Runing all test from Sliding Window Technique
+``` bash
+npm test -- sliding_window
+```
+
+
 ## Algorithms Available
-* frequencies_substring
-* longest_palindromic_substring (Test WIP)
-* longest_unique_substring (Test WIP)
+*For more details, you can find all the excersices in **[folder]/algorithms.md***
+* Sliding Window Technique
 * pairs_students_courses (Test WIP)
-* small_window_substring (Test WIP)
 * staircase (Test WIP)
