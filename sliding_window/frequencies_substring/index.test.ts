@@ -21,4 +21,9 @@ describe('Index Concatenation for "barfoothefoobarman"', () => {
     const words = ["foo", 'foo'];
     expect(findIndexConcatenation(s, words)).toEqual([]);
   });
+
+  it('Not having words to concatenate, should return an empty list', () => {
+    const words: string[] = [];
+    expect(findIndexConcatenation(s, words)).toEqual([]);
+  });
 });

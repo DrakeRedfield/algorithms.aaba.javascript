@@ -1,4 +1,11 @@
-function longestPalindromicSubstring(str) {
+/*
+  Problem:
+  You’re given a string str of length n.
+  Write a function to find all the longest palindromes from str.
+  A Palindrome is a word that you can read the same backward and frontward.
+*/ 
+
+export function longestPalindromicSubstring(str: string) {
   const maxWindowSize = str.length;
   const palindromArr = [];
   for (let size = maxWindowSize; size > 0; size--) {
@@ -26,9 +33,3 @@ function longestPalindromicSubstring(str) {
   }
   return palindromArr;
 }
-
-const sol1 = longestPalindromicSubstring("babad");
-const sol2 = longestPalindromicSubstring("cbbd");
-
-console.log(`Result 1: ${sol1}`); // Expected ['bab', 'aba']
-console.log(`Result 2: ${sol2}`); // Expected ['bb']
